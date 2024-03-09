@@ -1,0 +1,25 @@
+{
+  "lang": "en-EN",
+  "name": "Next.js TypeScript & Shadcn/ui — Template",
+  "short_name": "Next.js TypeScript & Shadcn/ui — Template",
+  "description": "Boilerplate template designed to quickly bootstrap a Next.js Web App, SPA, website or landing page with TypeScript, Shadcn/ui, TailwindCSS, ESLint, Husky and much more in just 30 seconds.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#000",
+  "background_color": "#000",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

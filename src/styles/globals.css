@@ -55,12 +55,17 @@
   }
 
   html,
-  body {
+  body,
+  div[data-overlay-container] {
     @apply h-full w-full;
   }
 
+  div[data-overlay-container] {
+    @apply flex flex-col;
+  }
+
   body {
-    @apply flex h-full w-full flex-col bg-background text-foreground;
+    @apply flex flex-col bg-background text-foreground;
   }
 
   .github-corner:hover .octo-arm {

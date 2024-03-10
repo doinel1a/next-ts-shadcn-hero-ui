@@ -2,7 +2,8 @@
 
 import React, { useState } from 'react';
 
-import { Button } from './ui/button';
+import { Button } from '@nextui-org/button';
+
 import { Card, CardContent, CardHeader } from './ui/card';
 
 export default function Counter() {
@@ -16,8 +17,10 @@ export default function Counter() {
       </CardHeader>
       <CardContent className='flex w-full items-center justify-between'>
         <Button
-          className='w-10 rounded-full'
+          color='primary'
+          className='rounded-full'
           data-testid='increase-count'
+          isIconOnly
           onClick={() => setCount((previousCount) => previousCount + 1)}
         >
           + 1
@@ -28,8 +31,10 @@ export default function Counter() {
         </h2>
 
         <Button
-          className='w-10 rounded-full'
+          color='primary'
+          className='rounded-full'
           data-testid='decrease-count'
+          isIconOnly
           onClick={() => setCount((previousCount) => previousCount - 1)}
         >
           - 1

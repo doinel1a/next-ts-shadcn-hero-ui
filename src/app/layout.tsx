@@ -4,12 +4,13 @@ import '../styles/globals.scss';
 import React from 'react';
 
 import type { Metadata, Viewport } from 'next';
+import type { PropsWithChildren } from 'react';
 
 import config from '_config';
 
 import Footer from '@/components/footer';
 import Navbar from '@/components/navbar';
-import RootProvider from '@/providers/root';
+import RootProvider from '@/components/providers/root';
 
 export const metadata: Metadata = {
   title: config.metadata.title,
@@ -23,15 +24,15 @@ export const viewport: Viewport = {
   themeColor: '#000'
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+type TRootLayout = PropsWithChildren;
+
+export default function RootLayout({ children }: TRootLayout) {
   return (
     <html lang='en' suppressHydrationWarning>
       <body>
         <RootProvider>
           <Navbar />
-
           {children}
-
           <Footer />
         </RootProvider>
       </body>

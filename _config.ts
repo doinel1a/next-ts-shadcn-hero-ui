@@ -1,10 +1,10 @@
 const config = {
   metadata: {
-    title: 'Next.js TypeScript & Shadcn/ui — Template',
+    title: 'Next.js 15 TypeScript, Shadcn/ui & NextUI — Template',
     description:
-      'Boilerplate template designed to quickly bootstrap a Next.js Web App, SPA, website or landing page with TypeScript, Shadcn/ui, TailwindCSS, ESLint, Husky and much more in just 30 seconds.',
+      'Boilerplate template designed to quickly bootstrap a Next.js Web App, SPA, website or landing page with Next.js 15, React.js 19, TypeScript, Shadcn/ui, NextUI, TailwindCSS and much more in just 30 seconds.',
     keywords:
-      'next.js, next.js-template, next.js-boilerplate, typescript, shadcn/ui, tailwindcss, eslint, prettier, husky, commitlint, lint-staged'
+      'next.js 15, next.js-15-template, next.js-15-boilerplate, react.js 19, react.js-19-template, react.js-19-boilerplate, typescript, shadcn, shadcn/ui, nextui, next-ui, tailwindcss, eslint, prettier, husky, commitlint, lint-staged'
   },
   server: {
     host: 'localhost',

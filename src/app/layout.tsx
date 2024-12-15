@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   title: config.metadata.title,
   description: config.metadata.description,
   keywords: config.metadata.keywords,
-  icons: 'favicon.svg',
-  manifest: 'app.webmanifest'
+  icons: '/favicon.svg',
+  manifest: '/app.webmanifest'
 };
 
 export const viewport: Viewport = {

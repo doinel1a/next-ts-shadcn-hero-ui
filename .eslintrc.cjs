@@ -10,6 +10,7 @@ module.exports = {
     'plugin:prettier/recommended',
     'plugin:jsx-a11y/recommended',
     'plugin:react-hooks/recommended',
+    'plugin:@tanstack/eslint-plugin-query/recommended',
     'plugin:@typescript-eslint/stylistic-type-checked',
     'plugin:@typescript-eslint/recommended-type-checked'
   ],

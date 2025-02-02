@@ -1,8 +1,8 @@
 {
   "lang": "en-EN",
-  "name": "Next.js 15 TypeScript, Shadcn/ui & NextUI — Template",
-  "short_name": "Next.js 15 TypeScript, Shadcn/ui & NextUI — Template",
-  "description": "Boilerplate template designed to quickly bootstrap a Next.js Web App, SPA, website or landing page with Next.js 15, React.js 19 TypeScript, Shadcn/ui, Next UI, TailwindCSS, ESLint, Husky and much more in just 30 seconds.",
+  "name": "Next.js 15 TypeScript, Shadcn/ui & HeroUI — Template",
+  "short_name": "Next.js 15 TypeScript, Shadcn/ui & HeroUI — Template",
+  "description": "Boilerplate template designed to quickly bootstrap a Next.js Web App, SPA, website or landing page with Next.js 15, React.js 19 TypeScript, Shadcn/ui, HeroUI, TailwindCSS, ESLint, Husky and much more in just 30 seconds.",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",

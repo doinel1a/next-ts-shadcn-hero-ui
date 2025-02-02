@@ -3,10 +3,10 @@
 
 import type { Config } from 'tailwindcss';
 
-import { nextui } from '@nextui-org/theme';
+import { heroui } from '@heroui/theme';
 
 // based on shadcn's styles
-const nextUIStyleOverride = {
+const heroUIStyleOverride = {
   layout: {
     disabledOpacity: '0.5', // shadcn: 0.9
     radius: {
@@ -27,7 +27,7 @@ const config = {
   darkMode: ['class'],
   content: [
     './src/**/*.{ts,tsx}',
-    './node_modules/@nextui-org/theme/dist/components/**/*.{js,ts,jsx,tsx}'
+    './node_modules/@heroui/theme/dist/components/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
     container: {
@@ -94,7 +94,7 @@ const config = {
       }
     }
   },
-  plugins: [nextui(nextUIStyleOverride), require('tailwindcss-animate')]
+  plugins: [heroui(heroUIStyleOverride), require('tailwindcss-animate')]
 } satisfies Config;
 
 export default config;

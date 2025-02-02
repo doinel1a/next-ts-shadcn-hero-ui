@@ -31,9 +31,11 @@ export default function RootLayout({ children }: TRootLayout) {
     <html lang='en' suppressHydrationWarning>
       <body>
         <RootProvider>
-          <Navbar />
-          {children}
-          <Footer />
+          <div className='grid min-h-[100dvh] grid-rows-[auto_1fr_auto]'>
+            <Navbar />
+            {children}
+            <Footer />
+          </div>
         </RootProvider>
       </body>
     </html>

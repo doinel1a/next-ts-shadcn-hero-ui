@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-
 import * as React from 'react';
 
 import { cn } from '@/lib/utils';
@@ -28,7 +26,6 @@ CardHeader.displayName = 'CardHeader';
 
 const CardTitle = React.forwardRef<HTMLParagraphElement, React.HTMLAttributes<HTMLHeadingElement>>(
   ({ className, ...properties }, reference) => (
-    // eslint-disable-next-line jsx-a11y/heading-has-content
     <h3
       ref={reference}
       className={cn('text-2xl font-semibold leading-none tracking-tight', className)}

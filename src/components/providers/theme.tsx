@@ -8,7 +8,7 @@ import { ThemeProvider as NextThemesProvider } from 'next-themes';
 
 import EStorageKeys from '@/lib/constants/keys';
 
-export default function ThemeProvider({ children, ...properties }: ThemeProviderProps) {
+export default function ThemeProvider({ children, ...properties }: Readonly<ThemeProviderProps>) {
   return (
     <NextThemesProvider
       attribute='class'

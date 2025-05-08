@@ -21,7 +21,9 @@ export default function Counter() {
           className='rounded-full'
           data-testid='increase-count'
           isIconOnly
-          onClick={() => setCount((previousCount) => previousCount + 1)}
+          onPress={() => {
+            setCount((previousCount) => previousCount + 1);
+          }}
         >
           + 1
         </Button>
@@ -35,7 +37,9 @@ export default function Counter() {
           className='rounded-full'
           data-testid='decrease-count'
           isIconOnly
-          onClick={() => setCount((previousCount) => previousCount - 1)}
+          onPress={() => {
+            setCount((previousCount) => previousCount - 1);
+          }}
         >
           - 1
         </Button>

@@ -11,7 +11,7 @@ const queryClient = new QueryClient();
 
 type TTanstackQueryProvider = PropsWithChildren;
 
-export default function TanstackQueryProvider({ children }: TTanstackQueryProvider) {
+export default function TanstackQueryProvider({ children }: Readonly<TTanstackQueryProvider>) {
   return (
     <QueryClientProvider client={queryClient}>
       {children}

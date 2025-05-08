@@ -1,0 +1,5 @@
+onlyBuiltDependencies:
+  - '@heroui/shared-utils'
+  - '@parcel/watcher'
+  - sharp
+  - unrs-resolver

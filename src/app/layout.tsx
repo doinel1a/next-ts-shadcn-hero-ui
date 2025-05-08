@@ -26,7 +26,7 @@ export const viewport: Viewport = {
 
 type TRootLayout = PropsWithChildren;
 
-export default function RootLayout({ children }: TRootLayout) {
+export default function RootLayout({ children }: Readonly<TRootLayout>) {
   return (
     <html lang='en' suppressHydrationWarning>
       <body>

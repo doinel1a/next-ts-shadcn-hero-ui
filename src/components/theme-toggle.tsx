@@ -20,13 +20,25 @@ export default function ThemeToggle() {
         </Button>
       </DropdownTrigger>
       <DropdownMenu data-testid='theme-dropdown-content'>
-        <DropdownItem key='theme-light' data-testid='theme-light' onClick={() => setTheme('light')}>
+        <DropdownItem
+          key='theme-light'
+          data-testid='theme-light'
+          onPress={() => {
+            setTheme('light');
+          }}
+        >
           <div className='flex items-center'>
             <Sun className='mr-2 h-[1.2rem] w-[1.2rem]' />
             <span>Light</span>
           </div>
         </DropdownItem>
-        <DropdownItem key='theme-dark' data-testid='theme-dark' onClick={() => setTheme('dark')}>
+        <DropdownItem
+          key='theme-dark'
+          data-testid='theme-dark'
+          onPress={() => {
+            setTheme('dark');
+          }}
+        >
           <div className='flex items-center'>
             <MoonStar className='mr-2 h-[1.2rem] w-[1.2rem]' />
             <span>Dark</span>
@@ -35,7 +47,9 @@ export default function ThemeToggle() {
         <DropdownItem
           key='theme-system'
           data-testid='theme-system'
-          onClick={() => setTheme('system')}
+          onPress={() => {
+            setTheme('system');
+          }}
         >
           <div className='flex items-center'>
             <Laptop className='mr-2 h-[1.2rem] w-[1.2rem]' />

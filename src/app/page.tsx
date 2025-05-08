@@ -3,7 +3,7 @@ import React from 'react';
 import Counter from '@/components/counter';
 import GithubCorner from '@/components/github-corner';
 
-export default function Home() {
+export default function HomePage() {
   return (
     <main className='flex h-full w-full flex-col items-center justify-center'>
       <GithubCorner

@@ -15,8 +15,8 @@ export default function GithubCorner({ title, url }: Readonly<IGithubCorner>) {
         height='80'
         viewBox='0 0 250 250'
         style={{
-          fill: 'hsl(var(--foreground))',
-          color: 'hsl(var(--background))',
+          fill: 'var(--foreground)',
+          color: 'var(--background)',
           position: 'absolute',
           top: 0,
           border: 0,

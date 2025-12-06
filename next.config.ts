@@ -7,10 +7,7 @@ import './src/env.js';
 import type { NextConfig } from 'next';
 
 const nextConfig = {
-  reactStrictMode: true,
-  eslint: {
-    ignoreDuringBuilds: true
-  }
+  reactStrictMode: true
 } satisfies NextConfig;
 
 export default nextConfig;

@@ -1,6 +1,6 @@
 import { heroui } from '@heroui/theme';
 
-// based on shadcn's stylesAdd commentMore actions
+// based on shadcn's styles
 const heroUIStyleOverride = {
   layout: {
     disabledOpacity: '0.5', // shadcn: 0.9

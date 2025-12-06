@@ -1,29 +1,24 @@
-import { FlatCompat } from '@eslint/eslintrc';
+import tanstackQuery from '@tanstack/eslint-plugin-query';
+import eslintConfigNext from 'eslint-config-next';
 import prettierConfig from 'eslint-config-prettier/flat';
 import prettierPlugin from 'eslint-plugin-prettier/recommended';
 import sonarjs from 'eslint-plugin-sonarjs';
 import unicorn from 'eslint-plugin-unicorn';
 import tseslint from 'typescript-eslint';
 
-const compat = new FlatCompat({
-  baseDirectory: import.meta.dirname
-});
-
 export default tseslint.config(
   {
     ignores: ['.next']
   },
-  ...compat.config({
-    /**
-     * Under the hood 'next' automatically configures:
-     * - eslint-plugin-next
-     * - eslint-plugin-react
-     * - eslint-plugin-react-hooks
-     * - eslint-plugin-jsx-a11y
-     */
-    extends: ['next'],
-    plugins: ['@tanstack/query']
-  }),
+  /**
+   * eslint-config-next automatically configures:
+   * - eslint-plugin-next
+   * - eslint-plugin-react
+   * - eslint-plugin-react-hooks
+   * - eslint-plugin-jsx-a11y
+   */
+  ...eslintConfigNext,
+  ...tanstackQuery.configs['flat/recommended'],
   prettierConfig,
   prettierPlugin,
   sonarjs.configs.recommended,
@@ -48,6 +43,12 @@ export default tseslint.config(
       '@typescript-eslint/no-misused-promises': [
         'error',
         { checksVoidReturn: { attributes: false } }
+      ],
+      '@typescript-eslint/restrict-template-expressions': [
+        'error',
+        {
+          allowNumber: true
+        }
       ]
     }
   },
@@ -59,6 +60,21 @@ export default tseslint.config(
       parserOptions: {
         projectService: true
       }
+    }
+  },
+  {
+    rules: {
+      'unicorn/no-null': 'off',
+      'unicorn/prevent-abbreviations': [
+        'error',
+        {
+          allowList: {
+            env: true,
+            ctx: true
+          },
+          ignore: [/db/i, /params/i]
+        }
+      ]
     }
   }
 );

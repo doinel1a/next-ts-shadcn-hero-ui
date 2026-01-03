@@ -1,7 +1,5 @@
 'use client';
 
-import React from 'react';
-
 import { Button } from '@heroui/button';
 import { Dropdown, DropdownItem, DropdownMenu, DropdownTrigger } from '@heroui/dropdown';
 import { IconDeviceLaptop, IconMoonStars, IconSun } from '@tabler/icons-react';

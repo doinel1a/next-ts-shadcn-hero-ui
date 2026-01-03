@@ -1,7 +1,5 @@
 'use client';
 
-import React from 'react';
-
 import type { PropsWithChildren } from 'react';
 
 import { HeroUIProvider } from '@heroui/system';

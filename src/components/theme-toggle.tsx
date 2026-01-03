@@ -4,7 +4,7 @@ import React from 'react';
 
 import { Button } from '@heroui/button';
 import { Dropdown, DropdownItem, DropdownMenu, DropdownTrigger } from '@heroui/dropdown';
-import { Laptop, MoonStar, Sun } from 'lucide-react';
+import { IconDeviceLaptop, IconMoonStars, IconSun } from '@tabler/icons-react';
 import { useTheme } from 'next-themes';
 
 export default function ThemeToggle() {
@@ -14,8 +14,8 @@ export default function ThemeToggle() {
     <Dropdown className='min-w-32'>
       <DropdownTrigger>
         <Button data-testid='theme-toggle' variant='bordered' isIconOnly>
-          <Sun className='h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90' />
-          <MoonStar className='absolute h-[1.2rem] w-[1.2rem] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0' />
+          <IconSun className='h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90' />
+          <IconMoonStars className='absolute h-[1.2rem] w-[1.2rem] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0' />
           <span className='sr-only'>Toggle theme</span>
         </Button>
       </DropdownTrigger>
@@ -28,7 +28,7 @@ export default function ThemeToggle() {
           }}
         >
           <div className='flex items-center'>
-            <Sun className='mr-2 h-[1.2rem] w-[1.2rem]' />
+            <IconSun className='mr-2 h-[1.2rem] w-[1.2rem]' />
             <span>Light</span>
           </div>
         </DropdownItem>
@@ -40,7 +40,7 @@ export default function ThemeToggle() {
           }}
         >
           <div className='flex items-center'>
-            <MoonStar className='mr-2 h-[1.2rem] w-[1.2rem]' />
+            <IconMoonStars className='mr-2 h-[1.2rem] w-[1.2rem]' />
             <span>Dark</span>
           </div>
         </DropdownItem>
@@ -52,7 +52,7 @@ export default function ThemeToggle() {
           }}
         >
           <div className='flex items-center'>
-            <Laptop className='mr-2 h-[1.2rem] w-[1.2rem]' />
+            <IconDeviceLaptop className='mr-2 h-[1.2rem] w-[1.2rem]' />
             <span>System</span>
           </div>
         </DropdownItem>

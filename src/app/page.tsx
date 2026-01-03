@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Counter from '@/components/counter';
 import GithubCorner from '@/components/github-corner';
 

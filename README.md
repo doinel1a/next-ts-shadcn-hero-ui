@@ -1,5 +1,6 @@
 [node]: https://nodejs.org/en
 [pnpm]: https://pnpm.io/installation
+[bun]: https://bun.com/docs/installation
 [yarn]: https://yarnpkg.com/getting-started/install
 [demo]: https://next-ts-shadcn-ui.d1a.app/
 [license]: https://github.com/doinel1a/next-ts-shadcn-hero-ui/blob/main/LICENSE
@@ -42,6 +43,7 @@ This repository is ideal for front-end developers who want to build modern, fast
 
 - JavaScript runtime **[node.js][node]**;
 - **(OPTIONAL)** Alternative package manager:
+  - **[bun][bun]** <br /> or
   - **[pnpm][pnpm]** <br /> or
   - **[yarn][yarn]**
 
@@ -53,14 +55,15 @@ This repository is ideal for front-end developers who want to build modern, fast
     ```bash
     git clone https://github.com/doinel1a/next-ts-shadcn-hero-ui YOUR-PROJECT-NAME
     ```
+- Decide which package manager you want to use, then delete the unused "**.lock**" file(s);
 - Open your terminal or code editor to the path your project is located, and run:
 
-  |                                                  | **npm**           | **pnpm**       | **yarn**       |
-  | ------------------------------------------------ | ----------------- | -------------- | -------------- |
-  | To **install** the dependencies                  | `npm install`     | `pnpm install` | `yarn install` |
-  | To **run** the **development server**            | `npm run dev`     | `pnpm dev`     | `yarn dev`     |
-  | To **build** your app **for production**         | `npm run build`   | `pnpm build`   | `yarn build`   |
-  | To **preview** your **production optimized app** | `npm run preview` | `pnpm preview` | `yarn preview` |
+  |                                                  | **npm**           | **bun**           | **pnpm**       | **yarn**       |
+  | ------------------------------------------------ | ----------------- | ----------------- | -------------- | -------------- |
+  | To **install** the dependencies                  | `npm install`     | `bun install`     | `pnpm install` | `yarn install` |
+  | To **run** the **development server**            | `npm run dev`     | `bun run dev`     | `pnpm dev`     | `yarn dev`     |
+  | To **build** your app **for production**         | `npm run build`   | `bun run build`   | `pnpm build`   | `yarn build`   |
+  | To **preview** your **production optimized app** | `npm run preview` | `bun run preview` | `pnpm preview` | `yarn preview` |
 
 [Back to :arrow_up:](#nextjs-15-typescript-shadcnui--heroui--template "Back to 'Table of contents' section")
 

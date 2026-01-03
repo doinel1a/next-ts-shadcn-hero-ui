@@ -39,31 +39,31 @@ This repository is ideal for front-end developers who want to build modern, fast
 
 ## :computer: Getting started
 
-### Prerequisites:
+### Prerequisites
 
-- JavaScript runtime **[node.js][node]**;
-- **(OPTIONAL)** Alternative package manager:
-  - **[bun][bun]** <br /> or
-  - **[pnpm][pnpm]** <br /> or
-  - **[yarn][yarn]**
+1. JavaScript runtime **[node.js][node]**
+2. **(OPTIONAL)** Alternative package manager:
+    - **[bun][bun]** <br /> or
+    - **[pnpm][pnpm]** <br /> or
+    - **[yarn][yarn]**
 
-### Start developing:
+### Start developing
 
-- Get the repository:
-  - click **"Use this template"** &nbsp; or &nbsp; **"Fork"** button <br /> alternately
-  - **clone** the repository through your terminal: <br />
-    ```bash
-    git clone https://github.com/doinel1a/next-ts-shadcn-hero-ui YOUR-PROJECT-NAME
-    ```
-- Decide which package manager you want to use, then delete the unused "**.lock**" file(s);
-- Open your terminal or code editor to the path your project is located, and run:
+1. Get the repository
+    - click **"Use this template"** &nbsp; or &nbsp; **"Fork"** button <br /> *alternately*
+    - **clone** the repository through your terminal: <br />
+      ```bash
+      git clone https://github.com/doinel1a/next-ts-shadcn-hero-ui YOUR-PROJECT-NAME
+      ```
+2. Decide which package manager you want to use, then delete the unused "**.lock**" file(s)
+3. Open your terminal or code editor to the path your project is located, and run:
 
-  |                                                  | **npm**           | **bun**           | **pnpm**       | **yarn**       |
-  | ------------------------------------------------ | ----------------- | ----------------- | -------------- | -------------- |
-  | To **install** the dependencies                  | `npm install`     | `bun install`     | `pnpm install` | `yarn install` |
-  | To **run** the **development server**            | `npm run dev`     | `bun run dev`     | `pnpm dev`     | `yarn dev`     |
-  | To **build** your app **for production**         | `npm run build`   | `bun run build`   | `pnpm build`   | `yarn build`   |
-  | To **preview** your **production optimized app** | `npm run preview` | `bun run preview` | `pnpm preview` | `yarn preview` |
+    |                                                  | **npm**           | **bun**           | **pnpm**       | **yarn**       |
+    | ------------------------------------------------ | ----------------- | ----------------- | -------------- | -------------- |
+    | **install** dependencies                  | `npm install`     | `bun install`     | `pnpm install` | `yarn install` |
+    | **run** the **development server**            | `npm run dev`     | `bun run dev`     | `pnpm dev`     | `yarn dev`     |
+    | **build** your **production app**         | `npm run build`   | `bun run build`   | `pnpm build`   | `yarn build`   |
+    | **preview** your **production app** | `npm run preview` | `bun run preview` | `pnpm preview` | `yarn preview` |
 
 [Back to :arrow_up:](#nextjs-15-typescript-shadcnui--heroui--template "Back to 'Table of contents' section")
 
@@ -73,19 +73,19 @@ This repository is ideal for front-end developers who want to build modern, fast
 
 This repository comes 🔋 packed with:
 
-- **Next.js 15**;
-- **React.js 19**;
-- **TypeScript**;
-- **Shadcn/ui**;
-- **HeroUI**;
-- **TailwindCSS 4**;
-- **SASS** & **SCSS**;
-- **ESLint**;
-- **Prettier**;
-- **Husky**;
-- **Commitlint**;
-- **Lint staged**;
-- **Playwright**;
+- **Next.js 15**
+- **React.js 19**
+- **TypeScript**
+- **Shadcn/ui**
+- **HeroUI**
+- **TailwindCSS 4**
+- **SASS** & **SCSS**
+- **ESLint**
+- **Prettier**
+- **Husky**
+- **Commitlint**
+- **Lint staged**
+- **Playwright**
 
 [Back to :arrow_up:](#nextjs-15-typescript-shadcnui--heroui--template "Back to 'Table of contents' section")
 
@@ -93,21 +93,21 @@ This repository comes 🔋 packed with:
 
 ## :globe_with_meridians: Browsers support
 
-The provided configuration ensures **92.3%** coverage for all browsers, in particular of the following:
+The configuration achieves **92.3%** coverage across all major browsers, specifically including:
 
 |            Chrome             |             Firefox              |             Edge             |        Opera         | Safari                       |
 | :---------------------------: | :------------------------------: | :--------------------------: | :------------------: | ---------------------------- |
 | ![Google Chrome][chrome-icon] | ![Mozilla Firefox][firefox-icon] | ![Microsoft Edge][edge-icon] | ![Opera][opera-icon] | ![Apple Safari][safari-icon] |
 
-**\*** In order to support a wider percentage of browsers, update the `./.browserslistrc` configuration file:
+**\*** In order to support a wider percentage of browsers, update the `.browserslistrc` configuration file:
 
-1. `last 3 versions`: browser version;
-2. `> 0.2%`: browser usage statistics;
-3. `not dead`: whether the browser is officially supported;
+- `last 3 versions`: browser version
+- `> 0.2%`: browser usage statistics
+- `not dead`: whether the browser is officially supported
 
 Update the configuration [here][browserslist] and check in real-time the **global browsers support**.
 
-**\* The more versions to support, larger JS and CSS bundles size will be.**
+**\* The more versions you need to support, the larger the JS and CSS bundle sizes will be.**
 
 [Back to :arrow_up:](#nextjs-15-typescript-shadcnui--heroui--template "Back to 'Table of contents' section")
 
@@ -119,20 +119,20 @@ Contributions are what make the open source community such an amazing place to l
 Any contribution is greatly appreciated: big or small, it can be documentation updates, adding new features or something bigger.  
 Please check the [**contributing guide**][code-of-conduct] for details on how to help out and keep in mind that all commits must follow the **[conventional commit format][commitlint]**.
 
-### How to contribute:
+### How to contribute
 
-1.  **[Get started](#computer-getting-started "Go to 'Getting started' section");**
-2.  **For a new feature:**
-    1.  Create a new branch: `git checkout -b feat/NEW-FEATURE`;
-    2.  Add your changes to the staging area: `git add PATH/TO/FILENAME.EXTENSION`;
-    3.  Commit your changes: `git commit -m "feat: NEW FEATURE"`;
-    4.  Push your new branch: `git push origin feat/NEW-FEATURE`;
-3.  **For a bug fix:**
-    1.  Create a new branch: `git checkout -b fix/BUG-FIX`;
-    2.  Add your changes to the staging area: `git add PATH/TO/FILENAME.EXTENSION`;
-    3.  Commit your changes: `git commit -m "fix: BUG FIX"`;
-    4.  Push your new branch: `git push origin fix/BUG-FIX`;
-4.  **Open a new [pull request][pulls];**
+1.  **[Get started](#computer-getting-started "Go to 'Getting started' section")**
+2.  **For a new feature**
+    1.  Create a new branch: `git checkout -b feat/NEW-FEATURE`
+    2.  Add your changes to the staging area: `git add PATH/TO/FILENAME.EXTENSION`
+    3.  Commit your changes: `git commit -m "feat: NEW FEATURE"`
+    4.  Push your new branch: `git push origin feat/NEW-FEATURE`
+3.  **For a bug fix**
+    1.  Create a new branch: `git checkout -b fix/BUG-FIX`
+    2.  Add your changes to the staging area: `git add PATH/TO/FILENAME.EXTENSION`
+    3.  Commit your changes: `git commit -m "fix: BUG FIX"`
+    4.  Push your new branch: `git push origin fix/BUG-FIX`
+4.  **Open a new [pull request][pulls]**
 
 [Back to :arrow_up:](#nextjs-15-typescript-shadcnui--heroui--template "Back to 'Table of contents' section")
 
@@ -141,7 +141,7 @@ Please check the [**contributing guide**][code-of-conduct] for details on how to
 ## :bookmark_tabs: License
 
 All logos and trademarks are the property of their respective owners.  
-Everything else is distributed under the **MIT License** .  
+Everything else is distributed under the **MIT License**.  
 See the [LICENSE][license] file for more informations.
 
 [Back to :arrow_up:](#nextjs-15-typescript-shadcnui--heroui--template "Back to 'Table of contents' section")
@@ -152,7 +152,7 @@ See the [LICENSE][license] file for more informations.
 
 Special thanks to:
 
-- [alrra](https://github.com/alrra) for [browser-logos](https://github.com/alrra/browser-logos);
-- [tandpfun](https://github.com/tandpfun) for [skill-icons](https://github.com/tandpfun/skill-icons);
+- [alrra](https://github.com/alrra) for [browser-logos](https://github.com/alrra/browser-logos)
+- [tandpfun](https://github.com/tandpfun) for [skill-icons](https://github.com/tandpfun/skill-icons)
 
 [Back to :arrow_up:](#nextjs-15-typescript-shadcnui--heroui--template "Back to 'Table of contents' section")

@@ -2,11 +2,12 @@ import tanstackQuery from '@tanstack/eslint-plugin-query';
 import eslintConfigNext from 'eslint-config-next';
 import prettierConfig from 'eslint-config-prettier/flat';
 import prettierPlugin from 'eslint-plugin-prettier/recommended';
-import sonarjs from 'eslint-plugin-sonarjs';
+import { configs as sonarjs } from 'eslint-plugin-sonarjs';
 import unicorn from 'eslint-plugin-unicorn';
+import { defineConfig } from 'eslint/config';
 import tseslint from 'typescript-eslint';
 
-export default tseslint.config(
+export default defineConfig(
   {
     ignores: ['.next']
   },
@@ -21,7 +22,7 @@ export default tseslint.config(
   ...tanstackQuery.configs['flat/recommended'],
   prettierConfig,
   prettierPlugin,
-  sonarjs.configs.recommended,
+  sonarjs.recommended,
   unicorn.configs.recommended,
   {
     files: ['**/*.ts', '**/*.tsx'],

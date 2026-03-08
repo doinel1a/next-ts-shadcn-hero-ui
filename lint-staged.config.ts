@@ -1,14 +1,11 @@
-// @ts-nocheck
-/* eslint-disable import/no-anonymous-default-export */
-
 import path from 'node:path';
 
 const tsc = () => 'tsc --noEmit';
 
-const eslint = (filenames) =>
+const eslint = (filenames: string[]) =>
   `eslint --fix ${filenames.map((f) => path.relative(process.cwd(), f)).join(' ')}`;
 
-const prettier = (filenames) =>
+const prettier = (filenames: string[]) =>
   `prettier --write ${filenames.map((f) => path.relative(process.cwd(), f)).join(' ')} --cache`;
 
 export default {

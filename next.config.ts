@@ -7,6 +7,7 @@ import './src/env';
 import type { NextConfig } from 'next';
 
 const config = {
+  reactCompiler: true,
   reactStrictMode: true
 } satisfies NextConfig;
 

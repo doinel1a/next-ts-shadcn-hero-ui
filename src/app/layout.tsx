@@ -4,12 +4,13 @@ import '../styles/globals.scss';
 import type { Metadata, Viewport } from 'next';
 import type { PropsWithChildren } from 'react';
 
-import config from '_config';
 import { Geist, Geist_Mono, Nunito_Sans } from 'next/font/google';
 
 import Footer from '@/components/footer';
 import Navbar from '@/components/navbar';
 import RootProvider from '@/components/providers/root';
+
+import config from '../../_config';
 
 const nunitoSans = Nunito_Sans({ variable: '--font-sans' });
 

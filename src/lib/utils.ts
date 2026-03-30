@@ -1,5 +1,3 @@
-/* eslint-disable unicorn/prevent-abbreviations */
-
 import type { ClassValue } from 'clsx';
 
 import { clsx } from 'clsx';

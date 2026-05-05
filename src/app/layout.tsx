@@ -35,9 +35,9 @@ export const viewport: Viewport = {
   themeColor: '#000'
 };
 
-type TRootLayout = PropsWithChildren;
+type TRootLayout = Readonly<PropsWithChildren>;
 
-export default function RootLayout({ children }: Readonly<TRootLayout>) {
+export default function RootLayout({ children }: TRootLayout) {
   return (
     <html lang='en' className={nunitoSans.variable} suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>

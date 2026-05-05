@@ -1,11 +1,11 @@
 import Link from 'next/link';
 
-interface IGithubCorner {
+type TGithubCorner = Readonly<{
   title: string;
   url: string;
-}
+}>;
 
-export default function GithubCorner({ title, url }: Readonly<IGithubCorner>) {
+export default function GithubCorner({ title, url }: TGithubCorner) {
   return (
     <Link title={title} aria-label={title} href={url} className='github-corner'>
       <svg

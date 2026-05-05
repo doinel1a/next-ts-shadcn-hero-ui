@@ -6,7 +6,9 @@ import { ThemeProvider as NextThemesProvider } from 'next-themes';
 
 import storageKeys from '@/lib/constants/keys';
 
-export default function ThemeProvider({ children, ...properties }: Readonly<ThemeProviderProps>) {
+type TThemeProvider = Readonly<ThemeProviderProps>;
+
+export default function ThemeProvider({ children, ...properties }: TThemeProvider) {
   return (
     <NextThemesProvider
       attribute='class'

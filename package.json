@@ -12,7 +12,8 @@
     "url": "https://github.com/doinel1a/next-ts-shadcn-next-ui"
   },
   "scripts": {
-    "postinstall": "husky & playwright install",
+    "prepare": "husky",
+    "postinstall": "playwright install",
     "dev": "next dev",
     "build": "next build",
     "preview": "next start",

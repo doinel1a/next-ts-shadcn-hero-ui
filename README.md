@@ -1,158 +1,220 @@
-[node]: https://nodejs.org/en
-[pnpm]: https://pnpm.io/installation
-[bun]: https://bun.com/docs/installation
-[yarn]: https://yarnpkg.com/getting-started/install
-[demo]: https://next-ts-shadcn-ui.d1a.app/
-[license]: https://github.com/doinel1a/next-ts-shadcn-hero-ui/blob/main/LICENSE
-[code-of-conduct]: https://github.com/doinel1a/next-ts-shadcn-hero-ui/blob/main/CODE_OF_CONDUCT.md
 [issues]: https://github.com/doinel1a/next-ts-shadcn-hero-ui/issues
 [pulls]: https://github.com/doinel1a/next-ts-shadcn-hero-ui/pulls
-[browserslist]: https://browsersl.ist/#q=last+3+versions%2C%3E+0.2%25%2C+not+dead
-[commitlint]: https://github.com/conventional-changelog/commitlint/#what-is-commitlint
-[chrome-icon]: https://github.com/alrra/browser-logos/blob/main/src/chrome/chrome_64x64.png
-[firefox-icon]: https://github.com/alrra/browser-logos/blob/main/src/firefox/firefox_64x64.png
-[edge-icon]: https://github.com/alrra/browser-logos/blob/main/src/edge/edge_64x64.png
-[opera-icon]: https://github.com/alrra/browser-logos/blob/main/src/opera/opera_64x64.png
-[safari-icon]: https://github.com/alrra/browser-logos/blob/main/src/safari/safari_64x64.png
+[license]: https://github.com/doinel1a/next-ts-shadcn-hero-ui/blob/main/LICENSE
+[demo]: https://next-ts-shadcn-hero-ui.d1a.app/
+[node]: https://nodejs.org/en
+[bun]: https://bun.com/docs/installation
+[pnpm]: https://pnpm.io/installation
+[yarn]: https://yarnpkg.com/getting-started/install
+[corepack]: https://nodejs.org/api/corepack.html
+[typescript]: https://www.typescriptlang.org/
+[nextjs]: https://nextjs.org/
+[react]: https://react.dev/
+[tailwindcss]: https://tailwindcss.com/
+[shadcn]: https://ui.shadcn.com/
+[hero-ui]: https://www.heroui.com/
+[radix-ui]: https://www.radix-ui.com/
+[zod]: https://zod.dev/
+[tanstack-query]: https://tanstack.com/query
+[next-themes]: https://github.com/pacocoursey/next-themes
+[framer-motion]: https://www.framer.com/motion/
+[tabler-icons]: https://tabler.io/icons
+[sass]: https://sass-lang.com/
+[playwright]: https://playwright.dev/
+[eslint]: https://eslint.org/
+[prettier]: https://prettier.io/
+[husky]: https://typicode.github.io/husky/
+[commitlint]: https://commitlint.js.org/
 
-# Next.js 16 TypeScript, Shadcn/ui & HeroUI — Template
+# Next.js · TypeScript · shadcn/ui · HeroUI - Template
 
-This development starter template is the ultimate solution to help you getting started on your project in no time, without the hassle of setting up and configuring your development environment from scratch each time you start working.
-This repository is ideal for front-end developers who want to build modern, fast and reliable web applications with the latest cutting edge technologies such as **Next.js 16**, **React.js 19**, **TypeScript**, **Shadcn/ui**, **HeroUI**, **TailwindCSS 4**, **ESLint 10**, **Prettier**, **Husky** and much more!
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)][license]
+[![Next.js](https://img.shields.io/badge/Next.js-16.x-black)][nextjs]
+[![TypeScript](https://img.shields.io/badge/TypeScript-6.x-3178c6)][typescript]
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.x-38bdf8)][tailwindcss]
+[![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-4.x-000000)][shadcn]
+[![HeroUI](https://img.shields.io/badge/HeroUI-2.x-000000)][hero-ui]
+[![Playwright](https://img.shields.io/badge/Playwright-1.60.x-45ba4b)][playwright]
+
+Every new front-end project starts the same way: configuring Next.js, wiring up TailwindCSS, installing shadcn/ui and HeroUI, setting up ESLint, Prettier, Husky, and Commitlint - before a single component is written. This template eliminates that overhead.
+
+It combines **[Next.js 16 App Router][nextjs]**, **[React 19][react]**, **[shadcn/ui][shadcn]**, **[HeroUI][hero-ui]**, and **[TailwindCSS 4][tailwindcss]** into a ready-to-use starter with every tool pre-configured and wired together.
+
+- **Type-safe by default** - TypeScript 6 with strict mode and `ts-reset` patches applied
+- **Dual UI library** - shadcn/ui + HeroUI components available side by side, both on Radix UI and TailwindCSS 4
+- **Dark mode ready** - `next-themes` integrated with a working theme toggle out of the box
+- **Animated by default** - Framer Motion wired through HeroUI for smooth, accessible animations
+- **Server state management** - TanStack Query 5 with devtools pre-configured
+- **React Compiler enabled** - automatic memoization via `babel-plugin-react-compiler`
+- **E2E test infrastructure included** - Playwright tests ready to run
+- **Code quality enforced** - ESLint 10, Prettier, Husky hooks, Commitlint, and lint-staged wired together
 
 ---
 
-**[Demo][demo]** &nbsp;&nbsp;**|**&nbsp;&nbsp; **[Bug(label: bug)][issues]** &nbsp;&nbsp;**|**&nbsp;&nbsp; **[Feature(label: enhancement)][issues]**
+[Demo][demo] &nbsp;|&nbsp; [Report a bug][issues] &nbsp;|&nbsp; [Request a feature][issues] &nbsp;|&nbsp; [Open a pull request][pulls]
 
 ---
 
-## :bookmark: Table of contents
+## Table of contents
 
-- :computer: [Getting started](#computer-getting-started "Go to 'Getting started' section")
-- :battery: [Features](#battery-features "Go to 'Features' section")
-- :globe_with_meridians: [Browsers support](#globe_with_meridians-browsers-support "Go to 'Browsers support' section")
-- :busts_in_silhouette: [Contribute](#busts_in_silhouette-contribute "Go to 'Contribute' section")
-- :bookmark_tabs: [License](#bookmark_tabs-license "Go to 'License' section")
-- :gem: [Acknowledgements](#gem-acknowledgements "Go to 'Acknowledgements' section")
+- [Getting started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Environment variables](#environment-variables)
+  - [Switching package manager](#switching-package-manager)
+- [Project structure](#project-structure)
+- [Available scripts](#available-scripts)
+- [Tech stack](#tech-stack)
 
 ---
 
-## :computer: Getting started
+## Getting started
 
 ### Prerequisites
 
-1. JavaScript runtime **[node.js][node]**
-2. **(OPTIONAL)** Alternative package manager:
-   - **[bun][bun]** <br /> or
-   - **[pnpm][pnpm]** <br /> or
-   - **[yarn][yarn]**
+- **[Node.js][node]** ≥ 24 - or **[Bun][bun]** ≥ 1.x as an alternative runtime
+- **[pnpm][pnpm]** ≥ 11 - or npm, yarn, or bun (see [switching package manager](#switching-package-manager))
 
-### Start developing
+### Installation
 
-1. Get the repository
-   - click **"Use this template"** &nbsp; or &nbsp; **"Fork"** button <br /> _alternately_
-   - **clone** the repository through your terminal: <br />
-     ```bash
-     git clone https://github.com/doinel1a/next-ts-shadcn-hero-ui YOUR-PROJECT-NAME
-     ```
-2. Decide which package manager you want to use, then delete the unused "**.lock**" file(s)
-3. Open your terminal or code editor to the path your project is located, and run:
+Clone the repository and install dependencies:
 
-   |                                     | **npm**           | **bun**           | **pnpm**       | **yarn**       |
-   | ----------------------------------- | ----------------- | ----------------- | -------------- | -------------- |
-   | **install** dependencies            | `npm install`     | `bun install`     | `pnpm install` | `yarn install` |
-   | **run** the **development server**  | `npm run dev`     | `bun run dev`     | `pnpm dev`     | `yarn dev`     |
-   | **build** your **production app**   | `npm run build`   | `bun run build`   | `pnpm build`   | `yarn build`   |
-   | **preview** your **production app** | `npm run preview` | `bun run preview` | `pnpm preview` | `yarn preview` |
+```bash
+git clone https://github.com/doinel1a/next-ts-shadcn-hero-ui YOUR-PROJECT-NAME
+cd YOUR-PROJECT-NAME
+```
 
-[Back to :arrow_up:](#nextjs-16-typescript-shadcnui--heroui--template "Back to 'Table of contents' section")
+|             | **npm**       | **bun**       | **pnpm**       | **yarn**       |
+| ----------- | ------------- | ------------- | -------------- | -------------- |
+| **install** | `npm install` | `bun install` | `pnpm install` | `yarn install` |
 
----
+### Start the development server
 
-## :battery: Features
+|         | **npm**       | **bun**   | **pnpm**   | **yarn**   |
+| ------- | ------------- | --------- | ---------- | ---------- |
+| **dev** | `npm run dev` | `bun dev` | `pnpm dev` | `yarn dev` |
 
-This repository comes 🔋 packed with:
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-- **Next.js 16**
-- **React.js 19**
-- **TypeScript**
-- **Shadcn/ui**
-- **HeroUI**
-- **TailwindCSS 4**
-- **SASS** & **SCSS**
-- **ESLint 10**
-- **Prettier**
-- **Husky**
-- **Commitlint**
-- **Lint staged**
-- **Playwright**
+### Environment variables
 
-[Back to :arrow_up:](#nextjs-16-typescript-shadcnui--heroui--template "Back to 'Table of contents' section")
+The template ships with a minimal environment configuration. Only `NODE_ENV` is validated by default - add your own variables to `src/env.ts` following the [T3 Env](https://env.t3.gg/) pattern.
 
----
+| Variable   | Description         | Side   | Required                    |
+| ---------- | ------------------- | ------ | --------------------------- |
+| `NODE_ENV` | Runtime environment | Server | No (default: `development`) |
 
-## :globe_with_meridians: Browsers support
+> [!NOTE]
+> Set `SKIP_ENV_VALIDATION=true` to bypass env validation (useful for Docker builds).
 
-The configuration achieves **92.3%** coverage across all major browsers, specifically including:
+### Switching package manager
 
-|            Chrome             |             Firefox              |             Edge             |        Opera         | Safari                       |
-| :---------------------------: | :------------------------------: | :--------------------------: | :------------------: | ---------------------------- |
-| ![Google Chrome][chrome-icon] | ![Mozilla Firefox][firefox-icon] | ![Microsoft Edge][edge-icon] | ![Opera][opera-icon] | ![Apple Safari][safari-icon] |
+<details>
+<summary>Steps to switch from pnpm to npm, yarn, or bun</summary>
 
-**\*** In order to support a wider percentage of browsers, update the `.browserslistrc` configuration file:
+**1.** Delete the pnpm lock file:
 
-- `last 3 versions`: browser version
-- `> 0.2%`: browser usage statistics
-- `not dead`: whether the browser is officially supported
+```bash
+rm pnpm-lock.yaml
+```
 
-Update the configuration [here][browserslist] and check in real-time the **global browsers support**.
+**2.** (Optional) Declare the new package manager in `package.json` so tooling and CI pick it up automatically:
 
-**\* The more versions you need to support, the larger the JS and CSS bundle sizes will be.**
+```json
+"packageManager": "npm@10.x.x"
+```
 
-[Back to :arrow_up:](#nextjs-16-typescript-shadcnui--heroui--template "Back to 'Table of contents' section")
+Replace `npm@10.x.x` with `yarn@4.x.x` or `bun@1.x.x` as appropriate. See [Corepack docs][corepack] for details.
 
----
+**3.** Install dependencies with the new package manager:
 
-## :busts_in_silhouette: Contribute
+```bash
+# npm
+npm install
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create.  
-Any contribution is greatly appreciated: big or small, it can be documentation updates, adding new features or something bigger.  
-Please check the [**contributing guide**][code-of-conduct] for details on how to help out and keep in mind that all commits must follow the **[conventional commit format][commitlint]**.
+# yarn
+yarn install
 
-### How to contribute
+# bun
+bun install
+```
 
-1.  **[Get started](#computer-getting-started "Go to 'Getting started' section")**
-2.  **For a new feature**
-    1.  Create a new branch: `git checkout -b feat/NEW-FEATURE`
-    2.  Add your changes to the staging area: `git add PATH/TO/FILENAME.EXTENSION`
-    3.  Commit your changes: `git commit -m "feat: NEW FEATURE"`
-    4.  Push your new branch: `git push origin feat/NEW-FEATURE`
-3.  **For a bug fix**
-    1.  Create a new branch: `git checkout -b fix/BUG-FIX`
-    2.  Add your changes to the staging area: `git add PATH/TO/FILENAME.EXTENSION`
-    3.  Commit your changes: `git commit -m "fix: BUG FIX"`
-    4.  Push your new branch: `git push origin fix/BUG-FIX`
-4.  **Open a new [pull request][pulls]**
+</details>
 
-[Back to :arrow_up:](#nextjs-16-typescript-shadcnui--heroui--template "Back to 'Table of contents' section")
+> [!NOTE]
+> All scripts in `package.json` use package-manager-agnostic syntax and work without changes after switching.
 
 ---
 
-## :bookmark_tabs: License
+## Project structure
 
-All logos and trademarks are the property of their respective owners.  
-Everything else is distributed under the **MIT License**.  
-See the [LICENSE][license] file for more informations.
-
-[Back to :arrow_up:](#nextjs-16-typescript-shadcnui--heroui--template "Back to 'Table of contents' section")
+```
+.
+├── __tests__/               # Playwright E2E tests
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx       # Root layout with providers and Google Fonts
+│   │   └── page.tsx         # Home page
+│   ├── assets/
+│   │   └── fonts/           # Self-hosted font files
+│   ├── components/
+│   │   ├── providers/
+│   │   │   ├── client/
+│   │   │   │   ├── hero-ui.tsx      # HeroUI provider
+│   │   │   │   ├── tanstack-query.tsx
+│   │   │   │   └── theme.tsx
+│   │   │   └── root.tsx             # Composes all providers
+│   │   ├── ui/              # shadcn/ui components
+│   │   ├── github-corner.tsx
+│   │   ├── navbar.tsx
+│   │   ├── footer.tsx
+│   │   ├── theme-toggle.tsx
+│   │   └── counter.tsx      # Example interactive component
+│   ├── lib/
+│   │   ├── constants/
+│   │   ├── types/
+│   │   └── utils.ts         # cn() utility (clsx + tailwind-merge)
+│   ├── styles/
+│   │   ├── globals.css      # TailwindCSS 4 entry point
+│   │   └── globals.scss     # Global SCSS overrides
+│   └── env.ts               # Env validation (Zod + T3 env-nextjs)
+└── public/                  # Static assets
+```
 
 ---
 
-## :gem: Acknowledgements
+## Available scripts
 
-Special thanks to:
+| Script      | Description                                    |
+| ----------- | ---------------------------------------------- |
+| `dev`       | Start the Next.js dev server                   |
+| `build`     | Build for production                           |
+| `preview`   | Start the production server (`next start`)     |
+| `typecheck` | Run TypeScript compiler without emitting files |
+| `lint`      | Run ESLint                                     |
+| `lint:fix`  | Run ESLint and auto-fix issues                 |
+| `format`    | Format all source files with Prettier          |
+| `test`      | Run Playwright E2E tests                       |
+| `test:ui`   | Run Playwright with interactive UI mode        |
 
-- [alrra](https://github.com/alrra) for [browser-logos](https://github.com/alrra/browser-logos)
-- [tandpfun](https://github.com/tandpfun) for [skill-icons](https://github.com/tandpfun/skill-icons)
+---
 
-[Back to :arrow_up:](#nextjs-16-typescript-shadcnui--heroui--template "Back to 'Table of contents' section")
+## Tech stack
+
+| Tool                                               | Purpose                                        |
+| -------------------------------------------------- | ---------------------------------------------- |
+| **[Next.js 16][nextjs]**                           | Full-stack React framework with App Router     |
+| **[React 19][react]**                              | UI library with React Compiler enabled         |
+| **[TypeScript 6][typescript]**                     | Static typing with strict mode                 |
+| **[shadcn/ui][shadcn]** + **[Radix UI][radix-ui]** | Accessible, composable UI component library    |
+| **[HeroUI 2][hero-ui]**                            | Beautiful, animated component library          |
+| **[TailwindCSS 4][tailwindcss]**                   | Utility-first CSS framework                    |
+| **[Framer Motion][framer-motion]**                 | Production-ready animation library             |
+| **[TanStack Query 5][tanstack-query]**             | Server state management and data fetching      |
+| **[next-themes][next-themes]**                     | Dark/light mode with SSR support               |
+| **[Zod 4][zod]**                                   | Schema validation for env vars and forms       |
+| **[SASS/SCSS][sass]**                              | Extended CSS with nesting and variables        |
+| **[Tabler Icons][tabler-icons]**                   | Consistent SVG icon set for React              |
+| **[Playwright][playwright]**                       | End-to-end browser testing                     |
+| **[ESLint 10][eslint]** + **[Prettier][prettier]** | Linting and formatting                         |
+| **[Husky][husky]** + **[Commitlint][commitlint]**  | Git hooks and conventional commit enforcement  |

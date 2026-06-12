@@ -11,7 +11,10 @@ import Footer from '@/components/footer';
 import Navbar from '@/components/navbar';
 import RootProvider from '@/components/providers/root';
 
-const nunitoSans = Nunito_Sans({ variable: '--font-sans' });
+const nunitoSans = Nunito_Sans({
+  variable: '--font-sans',
+  subsets: ['latin']
+});
 
 const geistSans = Geist({
   variable: '--font-geist-sans',

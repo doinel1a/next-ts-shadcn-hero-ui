@@ -107,7 +107,14 @@ export default defineConfig(
       'react/no-unstable-nested-components': 'error',
       'react/self-closing-comp': 'error',
 
-      'unicorn/prevent-abbreviations': [
+      'unicorn/filename-case': [
+        'error',
+        {
+          ignore: [/tests/i]
+        }
+      ],
+
+      'unicorn/name-replacements': [
         'error',
         {
           allowList: {
